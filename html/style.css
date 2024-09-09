@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+html {
+    overflow: hidden;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 1.7vh;
+
+}
+
+body {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.progress-container {
+    display: none;
+    z-index: 5;
+    color: #fff;
+    width: 19%;
+    position: fixed;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.7vh;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-style: normal;
+    
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#progress-label {
+    font-size: 1.7vh;
+    line-height: 4vh;
+    position: relative;
+    color: #ffffff;
+    z-index: 10;
+    font-weight: bold;
+}
+
+#progress-percentage {
+    font-size: 1.7vh;
+    line-height: 4vh;
+    position: relative;
+    color: #9ACD32;
+    z-index: 10;
+    font-weight: bold;
+}
+
+.progress-bar-container {
+    background: repeating-linear-gradient(
+        135deg,          /* Hoek van de streepjes */
+        #8286867e,       /* Startkleur van het streepje */
+        #8286867e 1.4px,   /* Lengte van de kleur voor het streepje */
+        transparent 3px, /* Start van de transparante ruimte */
+        transparent 4px  /* Lengte van de transparante ruimte */
+    );
+    height: 0.9vh;
+    position: relative;
+    display: block;
+    border-radius: 4px;
+}
+
+#progress-bar {
+    background-color: #79EF0B;
+    width: 0%;
+    height: 0.9vh;
+    border-radius: 4px;
+    transition: width 0.3s;
+    transition-timing-function: ease-out;
+    box-shadow: 0px 0px 30px #c2ff49cb;
+}
